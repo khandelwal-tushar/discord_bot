@@ -239,6 +239,7 @@ client.on('message', message =>{
     for (var i = 0; i < forbiddenWords.length; i++) {
     if (message.content.includes(forbiddenWords[i])) {
         message.react(`🤬`)
+        message.reply(forbiddenWords[i])
         if(message.author.username === 'SinOfPride07')
         sop_counter = sop_counter + 1;
         if(message.author.username === 'Ghoxtrix.')
