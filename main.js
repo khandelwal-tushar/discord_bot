@@ -237,7 +237,7 @@ n_counter = 0;
 s_counter = 0;
 client.on('message', message =>{
     for (var i = 0; i < forbiddenWords.length; i++) {
-    if (message.content.includes(forbiddenWords[i])) {
+    if (message.content.includes(forbiddenWords[i]) && !(message.author.bot)) {
         message.react(`🤬`)
         message.reply(forbiddenWords[i])
         if(message.author.username === 'SinOfPride07')
