@@ -103,7 +103,7 @@ client.on('message', message =>{
               const jokeData = data;
               //console.log(jokeData);
               message.reply("Altough there's no better than you, I'll still tell you one. \n\n ");
-              message.channel.send(jokeData);
+              message.channel.send(jokeData+ "");
             });
         });
         };
