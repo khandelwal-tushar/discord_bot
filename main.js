@@ -102,7 +102,7 @@ client.on('message', message =>{
             response.on("data", function(data){
               const jokeData = data;
               //console.log(jokeData);
-              message.reply("Altough there's no better than you, I'll still tell you one. \n\n ");
+              message.reply("Altough there's no better than you, I'll still tell you one.Here it is: \n\n ");
               message.channel.send("\n"+jokeData+ "");
             });
         });
@@ -277,11 +277,14 @@ messageVC =["Join the voice chat you desperate fucking imbecile!",
                        "Tera awaaz sunne ka mann kar raha h bhai",
                        "Aao jaldi loda, game khelenge yaar"]
 
-randomNumber = Math.floor(Math.random() * 4);
+
 
 client.on('message', message =>{
     if(message.content.includes('vc') || message.content.includes('VC'))
+    {
+        randomNumber = Math.floor(Math.random() * 4);
         message.channel.send(messageVC[randomNumber]);
+    }
 });
 
 
