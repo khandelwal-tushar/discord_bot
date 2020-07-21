@@ -102,7 +102,7 @@ client.on('message', message =>{
             response.on("data", function(data){
               const jokeData = data;
               console.log(jokeData);
-              message.channel.send(jokeData + "JOKE SHOULD BE HERE");
+              message.channel.send(jokeData + " ");
             });
         });
         };
