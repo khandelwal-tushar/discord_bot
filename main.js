@@ -85,7 +85,7 @@ client.on('message', message =>{
         const embed = new MessageEmbed()
           .setTitle('A Bot by Bot for Bots.')
           .setColor(0x10DF10)
-          .setDescription('\n\n List of Commands are given below:\n !kick - to kick a member\n !ban - to ban a member\n !toxic - to check the toxic meter\n !joke - hear a toxic jokek\n\n An Exclusive Bot for TOXIC TRYHARDS!');
+          .setDescription('\n\n List of Commands are given below:\n !kick - to kick a member\n !ban - to ban a member\n !toxic - to check the toxic meter\n !joke - hear a toxic joke\n\n An Exclusive Bot for TOXIC TRYHARDS!');
         message.channel.send(embed);
       }
       else if (message.content === '!toxic') {
@@ -272,10 +272,16 @@ client.on('message', message =>{
   }
 
 });
+messageVC =["Join the voice chat you desperate fucking imbecile!", 
+                       "Please join the voice chat respected kind sir. *begs humbly*",
+                       "Tera awaaz sunne ka mann kar raha h bhai",
+                       "Aao jaldi loda, game khelenge yaar"]
+
+randomNumber = Math.floor(Math.random() * 4);
 
 client.on('message', message =>{
     if(message.content.includes('vc') || message.content.includes('VC'))
-        message.channel.send('Join the voice chat you dumb little shit');
+        message.channel.send(messageVC[randomNumber]);
 });
 
 
