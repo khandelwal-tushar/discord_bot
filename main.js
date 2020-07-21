@@ -101,7 +101,8 @@ client.on('message', message =>{
           https.get(url, function(response){
             response.on("data", function(data){
               const jokeData = data;
-              message.channel.send(jokeData);
+              console.log(jokeData);
+              message.channel.send(jokeData + "JOKE SHOULD BE HERE");
             });
         });
         };
