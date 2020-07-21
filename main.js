@@ -96,7 +96,7 @@ client.on('message', message =>{
           .setDescription(`HyperBOI_69 : ${hb_counter}\n Ghoxtrix : ${g_counter} \n SinOfPride07 : ${sop_counter} \n Miserable_TaiPAn : ${p_counter}\n JeSus : ${s_counter}\n fifuhoobs : ${n_counter}`);
         message.channel.send(embed);
         }
-        else if(message.content === '!joke'{
+       /* else if(message.content === '!joke'{
           const url = "https://sv443.net/jokeapi/v2/joke/Dark?format=txt&type=twopart";
           https.get(url, function(response){
             response.on("data", function(data){
@@ -104,7 +104,7 @@ client.on('message', message =>{
               message.channel.send(jokeData);
             });
         });
-        });
+        });*/
 
     
 });
