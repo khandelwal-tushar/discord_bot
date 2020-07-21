@@ -85,7 +85,7 @@ client.on('message', message =>{
         const embed = new MessageEmbed()
           .setTitle('A Bot by Bot for Bots.')
           .setColor(0x10DF10)
-          .setDescription('\n\n List of Commands are given below:\n !kick - to kick a member\n !ban - to ban a member\n !toxic - to check the toxic meter\n\n An Exclusive Bot for TOXIC TRYHARDS!');
+          .setDescription('\n\n List of Commands are given below:\n !kick - to kick a member\n !ban - to ban a member\n !toxic - to check the toxic meter\n !joke - hear a toxic jokek\n\n An Exclusive Bot for TOXIC TRYHARDS!');
         message.channel.send(embed);
       }
       else if (message.content === '!toxic') {
@@ -103,7 +103,7 @@ client.on('message', message =>{
               const jokeData = data;
               //console.log(jokeData);
               message.reply("Altough there's no better than you, I'll still tell you one. \n\n ");
-              message.channel.send(jokeData+ "");
+              message.channel.send("\n"+jokeData+ "");
             });
         });
         };
