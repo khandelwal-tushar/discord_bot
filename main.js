@@ -104,7 +104,7 @@ client.on('message', message =>{
               message.channel.send(jokeData);
             });
         });
-        });
+        };
 
     
 });
