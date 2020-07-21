@@ -1,5 +1,6 @@
 const Discord = require('discord.js'); 
 const client = new Discord.Client();
+const https = require("https");
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 
 client.once('ready', () => {
@@ -95,9 +96,20 @@ client.on('message', message =>{
           .setDescription(`HyperBOI_69 : ${hb_counter}\n Ghoxtrix : ${g_counter} \n SinOfPride07 : ${sop_counter} \n Miserable_TaiPAn : ${p_counter}\n JeSus : ${s_counter}\n fifuhoobs : ${n_counter}`);
         message.channel.send(embed);
         }
+        else if(message.content === '!joke'{
+          const url = "https://sv443.net/jokeapi/v2/joke/Dark?format=txt&type=twopart";
+          https.get(url, function(response){
+            response.on("data", function(data){
+              const jokeData = data;
+              message.channel.send(jokeData);
+            });
+        });
+        });
 
     
 });
+
+
 
 forbiddenWords = ['anus',
     'arse',
