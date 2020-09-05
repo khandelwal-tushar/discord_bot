@@ -12,7 +12,14 @@ client.on('guildMemberAdd', member => {
     const channel = member.guild.channels.cache.find(ch => ch.name === 'general');
     console.log(channel);
     if (!channel) return;
-    channel.send(`Dont expect a welcome here, ${member}`);
+    welcomeMsg = [ "Leave your weapon at the door!",
+                  "Playing some games, aren't we today?",
+                  "Tell me, is CS>Valorant?",
+                  "Kings Die, Realms Fall, But we my comrade RESPAWN!" ,
+                  "Some trees flourish, others die. Some cattle grow strong, others are taken by wolves. Some men are born rich enough and dumb enough to enjoy their lives. Ain’t nothing fair. Well that being said, have a good stay here"];
+    randomNumber = Math.floor(Math.random() * 5 );
+    tosendText = welcomeMsg[randomNumber]
+    channel.send(`Welcome, ${member}. ${tosendText}`);
   });
   
 
