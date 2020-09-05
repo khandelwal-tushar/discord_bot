@@ -16,7 +16,7 @@ client.on('guildMemberAdd', member => {
                   "Playing some games, aren't we today?",
                   "Tell me, is CS>Valorant?",
                   "Kings Die, Realms Fall, But we my comrade RESPAWN!" ,
-                  "Some trees flourish, others die. Some cattle grow strong, others are taken by wolves. Some men are born rich enough and dumb enough to enjoy their lives. Ain’t nothing fair. Well that being said, have a good stay here"];
+                  "Some trees flourish, others die. Some cattle grow strong, others are taken by wolves. Some men are born rich enough and dumb enough to enjoy their lives. Ain’t nothing fair. Well that being said, have a good stay here!"];
     randomNumber = Math.floor(Math.random() * 5 );
     tosendText = welcomeMsg[randomNumber]
     channel.send(`Welcome, ${member}. ${tosendText}`);
