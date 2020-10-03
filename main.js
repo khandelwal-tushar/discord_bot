@@ -260,7 +260,6 @@ client.on('message', message =>{
     for (var i = 0; i < forbiddenWords.length; i++) {
     if (message.content.toLowerCase().includes(forbiddenWords[i]) && !(message.author.bot)) {
         message.react(`🤬`)
-        message.reply("LANGUAGE! Don't say this again : " + forbiddenWords[i])
         if(message.author.username === 'SinOfPride07')
         sop_counter = sop_counter + 1;
         if(message.author.username === 'Ghoxtrix.')
